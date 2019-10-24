@@ -12,7 +12,7 @@ import Text from "./Text";
 import Group from "./Group";
 import Portal from "./Portal";
 import {zIndices} from "./tools/zIndices";
-import colors from "./styles/colors";
+import colors from "./colors";
 
 const DRAWER_WIDTH = 400;
 const TRANSITION_DELAY = 320;

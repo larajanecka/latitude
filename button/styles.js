@@ -10,8 +10,7 @@ import {memoize} from "lodash";
 import {StyleSheet, type SheetEntry} from "aphrodite";
 import {TRANSMISSION, type Theme} from "../context/ThemeNameContext";
 import type {ButtonKind, ButtonIntent, ButtonSize, ButtonWidth} from "./Button";
-import colors from "../styles/colors";
-import latitudeColors, {transmissionColors} from "../colors";
+import colors, {transmissionColors} from "../colors";
 import {include, padding, margin, typeScale, fontWeights} from "../styles";
 import {deprecatedPaddingSizeConstants} from "../styles/deprecatedWhitespace";
 
@@ -69,10 +68,10 @@ type ColorSwatch = {|
 
 const getColors = (theme, intent): ColorSwatch => {
   let colorSwatch = {
-    primary1: latitudeColors.indigo30,
-    primary2: latitudeColors.indigo30,
-    primary3: latitudeColors.indigo50,
-    highlight: latitudeColors.indigo20,
+    primary1: colors.indigo30,
+    primary2: colors.indigo30,
+    primary3: colors.indigo50,
+    highlight: colors.indigo20,
     shadow: "rgba(39, 44, 52, 0.12)",
   };
 
@@ -88,18 +87,18 @@ const getColors = (theme, intent): ColorSwatch => {
 
   if (intent === "danger") {
     colorSwatch = {
-      primary1: latitudeColors.red40,
-      primary2: latitudeColors.red40,
-      primary3: latitudeColors.red50,
-      highlight: latitudeColors.red20,
+      primary1: colors.red40,
+      primary2: colors.red40,
+      primary3: colors.red50,
+      highlight: colors.red20,
       shadow: "rgba(39, 44, 52, 0.12)",
     };
   } else if (intent === "none") {
     colorSwatch = {
-      primary1: latitudeColors.black,
-      primary2: latitudeColors.grey40,
-      primary3: latitudeColors.black,
-      highlight: latitudeColors.grey20,
+      primary1: colors.black,
+      primary2: colors.grey40,
+      primary3: colors.black,
+      highlight: colors.grey20,
       shadow: "rgba(39, 44, 52, 0.12)",
     };
   }
@@ -159,8 +158,8 @@ const styles = memoize(
       hollow: {
         color: buttonColors.primary1,
         fill: buttonColors.primary1,
-        background: latitudeColors.white,
-        border: `2px solid ${latitudeColors.grey20}`,
+        background: colors.white,
+        border: `2px solid ${colors.grey20}`,
         paddingWidth: `calc(${deprecatedPaddingSizeConstants.m} - 1px)`,
         ":focus": {
           boxShadow: `0 0 0 3px ${buttonColors.highlight}`,
@@ -172,7 +171,7 @@ const styles = memoize(
         ":active": {
           color: buttonColors.primary3,
           borderColor: buttonColors.primary2,
-          background: latitudeColors.grey10,
+          background: colors.grey10,
           boxShadow: "none",
         },
         ":active span svg": {
@@ -188,11 +187,11 @@ const styles = memoize(
           boxShadow: `0 0 0 3px ${buttonColors.highlight}`,
         },
         ":hover": {
-          background: latitudeColors.grey10,
+          background: colors.grey10,
           boxShadow: "none",
         },
         ":active": {
-          background: latitudeColors.grey20,
+          background: colors.grey20,
           color: buttonColors.primary3,
         },
         ":active span svg": {
@@ -274,26 +273,26 @@ const styles = memoize(
         boxShadow: "none",
       },
       solid: {
-        background: latitudeColors.grey30,
-        color: latitudeColors.grey40,
-        fill: latitudeColors.grey40,
+        background: colors.grey30,
+        color: colors.grey40,
+        fill: colors.grey40,
       },
       hollow: {
         borderColor: "transparent",
-        background: latitudeColors.grey30,
-        color: latitudeColors.grey40,
-        fill: latitudeColors.grey40,
+        background: colors.grey30,
+        color: colors.grey40,
+        fill: colors.grey40,
       },
       bare: {
-        color: latitudeColors.grey30,
+        color: colors.grey30,
         ":nth-child(1n) span svg": {
-          fill: latitudeColors.grey30,
+          fill: colors.grey30,
         },
       },
       blank: {
-        color: latitudeColors.grey30,
+        color: colors.grey30,
         ":nth-child(1n) span svg": {
-          fill: latitudeColors.grey30,
+          fill: colors.grey30,
         },
       },
     });
@@ -354,12 +353,12 @@ const styles = memoize(
       hollow: {},
       bare: {
         ":after": {
-          background: latitudeColors.grey30,
+          background: colors.grey30,
         },
       },
       blank: {
         ":after": {
-          background: latitudeColors.grey30,
+          background: colors.grey30,
         },
       },
     });

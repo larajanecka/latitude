@@ -10,8 +10,7 @@ import invariant from "../tools/invariant";
 import Icon from "../Icon";
 import {padding, include} from "../styles/index";
 import {LabelContext} from "../Label";
-import colors from "../styles/colors";
-import latitudeColors from "../colors";
+import colors from "../colors";
 import InputGroupContext, {
   CENTER_INPUT,
   LEFT_INPUT,
@@ -242,7 +241,7 @@ const styles = StyleSheet.create({
     },
   },
   placeholder: {
-    color: latitudeColors.grey40,
+    color: colors.grey40,
   },
 });
 

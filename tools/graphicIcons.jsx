@@ -5,7 +5,7 @@
  */
 
 import {memoize} from "lodash";
-import colors from "../styles/colors";
+import colors from "../colors";
 import getThemeColors from "../styles/getThemeColors";
 import graphicIconsConstants, {
   graphicIconNames,

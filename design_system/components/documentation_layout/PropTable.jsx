@@ -20,7 +20,7 @@ import type {
 import Text from "../../../Text";
 import Group from "../../../Group";
 
-import colors from "../../../styles/colors";
+import colors from "../../../colors";
 import {sharedStyles} from "../../../button/styles";
 
 import CustomPopover from "../../../popover/CustomPopover";

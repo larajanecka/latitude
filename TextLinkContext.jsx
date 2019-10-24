@@ -3,12 +3,12 @@
  * @flow strict
  */
 import * as React from "react";
-import type {Color} from "./styles/colors";
+import type {Color} from "./colors";
 import type {TypeScale} from "./Text";
 
 export type TextLinkContextType = {
   isNested: boolean,
-  // A string specifying the color for the text style. Look in styles/colors for a full list. This will get passed to child Links / child LinkActions / child Texts
+  // A string specifying the color for the text style. Look in latitude/colors for a full list. This will get passed to child Links / child LinkActions / child Texts
   color: Color,
   // The size of the text. This can get passed to child Links / LinkActions / child Texts
   scale: TypeScale,

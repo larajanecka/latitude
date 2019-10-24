@@ -12,7 +12,7 @@ import ColorPalette, {
   ColorClassificationLegend,
 } from "../../components/helpers/ColorPalette";
 
-import colors, {type Color} from "../../../styles/colors";
+import colors, {type Color} from "../../../colors";
 
 import {
   deprecatedMarginSizeConstants,
@@ -112,7 +112,7 @@ const ColorSystem = () => (
                           <ColorExample
                             type="logo"
                             foreground="white"
-                            background="red45"
+                            background="red40"
                           />
                         </Group>
                       </Group>
@@ -131,8 +131,8 @@ const ColorSystem = () => (
                           />
                           <ColorExample
                             type="logo"
-                            foreground="yellow10"
-                            background="yellow60"
+                            foreground="orange10"
+                            background="orange60"
                           />
                         </Group>
                       </Group>
@@ -312,7 +312,7 @@ const ColorSystem = () => (
                     <ColorExample
                       title="2.21:1"
                       foreground="white"
-                      background="yellow40"
+                      background="orange40"
                       type="lines"
                     />
                   </Group>
@@ -478,7 +478,7 @@ const exeptionExampleStyles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: colors.yellow50,
+    backgroundColor: colors.orange50,
     borderRadius: "4px",
     marginRight: deprecatedMarginSizeConstants.m,
   },

@@ -6,7 +6,7 @@
 
 import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 export default function Rule() {
   return <div className={css(hrStyles.rule)} />;

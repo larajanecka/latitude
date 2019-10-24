@@ -6,7 +6,7 @@
 import React, {useState, useCallback} from "react";
 import {StyleSheet, css} from "aphrodite";
 import Collection from "../../components/Collection";
-import colors from "../../../../../../styles/colors";
+import colors from "../../../../../../colors";
 import Text from "../../../../../../Text";
 import Label from "../../../../../../Label";
 import TextInput from "../../../../../../TextInput";
@@ -90,7 +90,7 @@ const FormWithColumns = ({
     .map((_item, index) => (
       // eslint-disable-next-line react/no-array-index-key
       <Label value="label" indicateRequired={true} key={index}>
-        
+
         <TextInput placeholder="Placeholder" onChange={() => undefined} value=""/>
       </Label>
     ));

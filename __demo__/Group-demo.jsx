@@ -10,7 +10,7 @@ import TextInput from "../TextInput";
 import Label from "../Label";
 import Text from "../Text";
 import Button from "../button/Button";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 import type {DemoFile} from "../design_system/types/demoTypes";
 

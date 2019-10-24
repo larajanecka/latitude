@@ -11,7 +11,7 @@ import {StyleSheet, css} from "aphrodite";
 import Icon from "../Icon";
 import Loader from "../Loader";
 import type {IconNames} from "../tools/icons";
-import colors from "../styles/colors";
+import colors from "../colors";
 import stringOrFalse from "../tools/stringOrFalse";
 import {sharedStyles, getButtonStyle} from "../button/styles";
 import ThemeNameContext from "../context/ThemeNameContext";
@@ -252,7 +252,7 @@ const styles = StyleSheet.create({
   none: {
     fill: colors.grey50,
     ":hover span svg": {
-      fill: colors.blackDoNotUse,
+      fill: colors.black,
     },
   },
   /*

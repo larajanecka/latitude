@@ -15,7 +15,7 @@ import TextInput from "../../TextInput";
 import Label from "../../Label";
 import CustomModal, {defaultModalStyles} from "../CustomModal";
 import {include, padding} from "../../styles";
-import colors from "../../styles/colors";
+import colors from "../../colors";
 
 const demos: DemoFile = {
   demos: [

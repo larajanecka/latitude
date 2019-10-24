@@ -14,7 +14,7 @@ import popupWithClickAway, {
 } from "./tools/popupWithClickAway";
 import DeprecatedPopperTarget from "./popup/DeprecatedPopperTarget";
 import DeprecatedPopper from "./popup/DeprecatedPopper";
-import colors from "./styles/colors";
+import colors from "./colors";
 import {border, include, margin} from "./styles/index";
 import {zIndices} from "./tools/zIndices";
 

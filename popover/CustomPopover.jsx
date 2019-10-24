@@ -5,8 +5,7 @@
 
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
-import colors from "../styles/colors";
-import latitudeColors from "../colors";
+import colors from "../colors";
 
 type Props = {|
   /** body of the popover */
@@ -32,7 +31,7 @@ const styles = StyleSheet.create({
     minWidth: "310px",
     display: "flex",
     flexDirection: "column",
-    backgroundColor: latitudeColors.white,
+    backgroundColor: colors.white,
     boxShadow: "0px 0px 20px rgba(57, 65, 77, 0.15)",
     margin: "4px 0",
   },

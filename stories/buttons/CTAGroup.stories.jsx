@@ -10,11 +10,11 @@ import {StyleSheet, css} from "aphrodite";
 import {storiesOf} from "@storybook/react";
 import sections from "sections";
 
-import DeprecatedVerticalGroup from "DeprecatedVerticalGroup";
-import Group from "Group";
-import Button from "button/Button";
-import Text from "Text";
-import colors from "styles/colors";
+import DeprecatedVerticalGroup from "../../DeprecatedVerticalGroup";
+import Group from "../../Group";
+import Button from "../../button/Button";
+import Text from "../../Text";
+import colors from "../../colors";
 
 const stories = storiesOf(sections.buttons, module);
 

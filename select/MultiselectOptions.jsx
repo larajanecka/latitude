@@ -7,7 +7,7 @@ import {StyleSheet, css} from "aphrodite";
 import {InFilterContext} from "../filter/BaseFilter";
 import CheckboxList, {type Option} from "../CheckboxList";
 import TextInput from "../TextInput";
-import colors from "../styles/colors";
+import colors from "../colors";
 import {border} from "../styles/index";
 import {whitespaceSizeConstants} from "../styles/whitespace";
 

@@ -6,7 +6,7 @@
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
 import Text from "../../../../../Text";
-import colors from "../../../../../styles/colors";
+import colors from "../../../../../colors";
 
 type Props = {|
   +children: React.Node,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flexFlow: "column nowrap",
   },
   dontItemTitle: {
-    borderTop: `4px solid ${colors.red45}`,
+    borderTop: `4px solid ${colors.red40}`,
     padding: "20px 0",
   },
   dontItemContent: {

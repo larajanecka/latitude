@@ -5,13 +5,12 @@
 import * as React from "react";
 import {css} from "aphrodite";
 
-import colors from "./styles/colors";
+import colors from "./colors";
 import {createThemedStylesheet, type ThemeData} from "./styles";
 import ThemeNameContext, {
   TRANSMISSION,
   type Theme,
 } from "./context/ThemeNameContext";
-import latitudeColors from "./colors";
 
 type Props = {|
   /** Whether the toggle is on. */
@@ -119,10 +118,10 @@ function getColors(theme: Theme): SettingsToggleColors {
   }
 
   return {
-    primary1: latitudeColors.indigo30,
-    primary2: latitudeColors.indigo40,
-    primary3: latitudeColors.indigo50,
-    highlight: latitudeColors.indigo20,
+    primary1: colors.indigo30,
+    primary2: colors.indigo40,
+    primary3: colors.indigo50,
+    highlight: colors.indigo20,
     shadow: "rgba(39, 44, 52, 0.25)",
     focusOutline: "rgba(162,172,242,0.5)",
   };
@@ -149,14 +148,14 @@ const themedStyles = createThemedStylesheet(({themeName}: ThemeData) => {
         borderColor: "transparent",
         ":after": {
           boxShadow: `0px 2px 2px ${themedColors.shadow}`,
-          border: `2px solid ${latitudeColors.grey40}`,
-          backgroundColor: latitudeColors.white,
+          border: `2px solid ${colors.grey40}`,
+          backgroundColor: colors.white,
         },
       },
       ":active input": {
         ":after": {
           boxShadow: "none",
-          backgroundColor: latitudeColors.grey40,
+          backgroundColor: colors.grey40,
         },
       },
       ":hover input:checked": {
@@ -180,7 +179,7 @@ const themedStyles = createThemedStylesheet(({themeName}: ThemeData) => {
       position: "relative",
       appearance: "none",
       outline: "none",
-      backgroundColor: latitudeColors.grey20,
+      backgroundColor: colors.grey20,
       width: `${trackWidth}px`,
       height: `${trackHeight}px`,
       transitionProperty: "background, border, box-shadow",
@@ -195,8 +194,8 @@ const themedStyles = createThemedStylesheet(({themeName}: ThemeData) => {
         left: `-${offset}px`,
         width: `${knobSize}px`,
         height: `${knobSize}px`,
-        backgroundColor: latitudeColors.white,
-        border: `2px solid ${latitudeColors.grey20}`,
+        backgroundColor: colors.white,
+        border: `2px solid ${colors.grey20}`,
         verticalAlign: "center",
         transitionProperty: "left, background, border, box-shadow",
         transitionDuration: "150ms",
@@ -239,20 +238,20 @@ const themedStyles = createThemedStylesheet(({themeName}: ThemeData) => {
     disabled: {
       pointerEvents: "none",
       cursor: "default",
-      color: latitudeColors.grey40,
+      color: colors.grey40,
     },
     disabledInput: {
       cursor: "not-allowed",
-      backgroundColor: latitudeColors.grey10,
+      backgroundColor: colors.grey10,
       ":after": {
-        backgroundColor: latitudeColors.white,
-        borderColor: latitudeColors.grey20,
+        backgroundColor: colors.white,
+        borderColor: colors.grey20,
       },
       ":checked": {
-        backgroundColor: latitudeColors.grey20,
+        backgroundColor: colors.grey20,
         ":after": {
-          backgroundColor: latitudeColors.grey30,
-          borderColor: latitudeColors.grey30,
+          backgroundColor: colors.grey30,
+          borderColor: colors.grey30,
         },
       },
     },

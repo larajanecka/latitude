@@ -7,7 +7,7 @@
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
 import {include, border, margin, padding} from "../styles";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 import Icon, {type IconNames} from "../Icon";
 

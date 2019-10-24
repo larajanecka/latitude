@@ -8,7 +8,7 @@ import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 import ConnectedToaster from "../../../toast/ConnectedToaster";
 import invariant from "../../../tools/invariant";
-import colors from "../../../styles/colors";
+import colors from "../../../colors";
 import {
   ThemeProvider,
   type Theme,

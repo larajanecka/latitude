@@ -10,12 +10,12 @@ import {storiesOf} from "@storybook/react";
 import sections from "sections";
 import {number, boolean, select, withKnobs} from "@storybook/addon-knobs";
 
-import colors from "styles/colors";
-import flexboxStyles from "styles/flexboxStyles";
+import colors from "../../colors";
+import flexboxStyles from "../../styles/flexboxStyles";
 
-import Group from "Group";
-import Text from "Text";
-import Button from "button/Button";
+import Group from "../../Group";
+import Text from "../../Text";
+import Button from "../../button/Button";
 
 const stories = storiesOf(`${sections.layout}/Flex`, module);
 stories.addDecorator(withKnobs);

@@ -9,7 +9,7 @@ import Text from "../../../../../../Text";
 import Label from "../../../../../../Label";
 import TextInput from "../../../../../../TextInput";
 import Button from "../../../../../../button/Button";
-import colors from "../../../../../../styles/colors";
+import colors from "../../../../../../colors";
 import Collection from "../../components/Collection";
 import Item from "../../components/Item";
 import Half from "../../components/Half";
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
       content: '""',
       display: "block",
       position: "absolute",
-      background: colors.yellow50,
+      background: colors.orange50,
       opacity: 0.25,
       top: 0,
       right: 0,
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   legendBubble: {
     position: "absolute",
     right: -34,
-    backgroundColor: colors.blackDoNotUse,
+    backgroundColor: colors.black,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

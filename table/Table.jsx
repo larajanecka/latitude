@@ -18,10 +18,9 @@ import invariant from "../tools/invariant";
 import Text from "../Text";
 import Icon from "../Icon";
 import Loader from "../Loader";
-import colors from "../styles/colors";
+import colors from "../colors";
 import Clickable from "../base_candidate/Clickable";
 import RowContext from "./RowContext";
-import latitudeColors from "../colors";
 
 export type Style = {[string]: string | number};
 
@@ -1130,13 +1129,13 @@ const styles = StyleSheet.create({
     padding: "12px 0px",
   },
   isHighlighted: {
-    backgroundColor: latitudeColors.grey10,
+    backgroundColor: colors.grey10,
   },
   isSelected: {
-    backgroundColor: latitudeColors.grey20,
-    borderBottom: `1px solid ${latitudeColors.grey60}`,
+    backgroundColor: colors.grey20,
+    borderBottom: `1px solid ${colors.grey60}`,
   },
   isNextSelected: {
-    borderBottom: `1px solid ${latitudeColors.grey60}`,
+    borderBottom: `1px solid ${colors.grey60}`,
   },
 });

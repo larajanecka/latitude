@@ -6,7 +6,7 @@
 
 import type {Theme} from "../context/ThemeNameContext";
 import themeColorMaps from "./themeColorMaps";
-import {type Color} from "./colors";
+import {type Color} from "../colors";
 
 export type ThemeColors = {|
   +primary: Color,

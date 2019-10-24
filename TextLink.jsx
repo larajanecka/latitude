@@ -10,7 +10,7 @@ import {css, StyleSheet} from "aphrodite";
 
 import {typeScale, fontWeights} from "./styles";
 import linkStyles, {type LinkStyle} from "./styles/linkStyles";
-import colors from "./styles/colors";
+import colors from "./colors";
 
 import ThemeNameContext, {type Theme} from "./context/ThemeNameContext";
 import TextLinkContext from "./TextLinkContext";

@@ -18,7 +18,7 @@ import Group from "../../../Group";
 import componentsMetaList from "../../constants/componentsMetaList.json";
 
 import Text from "../../../Text";
-import colors from "../../../styles/colors";
+import colors from "../../../colors";
 import betterGroupBy from "../../../tools/betterGroupBy";
 import {fontWeights} from "../../../styles";
 import {

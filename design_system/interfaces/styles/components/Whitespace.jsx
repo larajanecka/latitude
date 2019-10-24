@@ -10,7 +10,7 @@ import Highlight from "react-highlight/lib/optimized";
 import TextLink from "../../../../TextLink";
 import Group from "../../../../Group";
 
-import colors from "../../../../styles/colors";
+import colors from "../../../../colors";
 import {deprecatedPaddingSizeConstants} from "../../../../styles/deprecatedWhitespace";
 import Text from "../../../../Text";
 import Markdown from "../../../components/markdown/Markdown";

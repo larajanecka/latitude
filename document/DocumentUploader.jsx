@@ -22,7 +22,7 @@ import DeprecatedVerticalGroup from "../DeprecatedVerticalGroup";
 import PdfViewer from "./PdfViewer";
 import Portal from "../Portal";
 import Toast from "../toast/Toast";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 export type ServerState = "waiting" | "uploading" | "deleting" | "error";
 

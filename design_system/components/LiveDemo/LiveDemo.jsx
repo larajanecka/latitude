@@ -14,7 +14,7 @@ import React, {
 } from "react";
 import {StyleSheet, css} from "aphrodite";
 import { LiveProvider, LiveError, LivePreview } from "react-live";
-import colors from "../../../styles/colors";
+import colors from "../../../colors";
 import SettingsPopover from "./SettingsPopover";
 import ScopeList from "./ScopeList";
 import Group from "../../../Group";

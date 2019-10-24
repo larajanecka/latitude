@@ -11,7 +11,7 @@ import Link from "../../../../Link";
 import Group from "../../../../Group";
 
 import {deprecatedPaddingSizeConstants} from "../../../../styles/deprecatedWhitespace";
-import colors from "../../../../styles/colors";
+import colors from "../../../../colors";
 import Text from "../../../../Text";
 
 export default function Styles() {
@@ -77,7 +77,7 @@ export default function Styles() {
             <Highlight languages={["typescript"]} className="typescript">
               {`import {css, StyleSheet} from "aphrodite";
 
-import colors from "styles/colors";`}
+import colors from "latitude/colors";`}
             </Highlight>
           </Group>
 
@@ -158,7 +158,7 @@ render() {
             shadows. When applying color, please follow these guidelines:
           </Text>
           <Group flexDirection="column" gap={8}>
-            <Text>- Always directly call colors from `styles/colors`</Text>
+            <Text>- Always directly call colors from `latitude/colors`</Text>
             <Text>- Never hardcode a hex value</Text>
             <Text>- Never modify the tint of a color</Text>
             <Text>- Never use gradients</Text>
@@ -505,7 +505,7 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">Recent versions</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
@@ -513,7 +513,7 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">Recent versions</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
@@ -530,7 +530,7 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">Recent versions</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
@@ -538,7 +538,7 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">Recent versions</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
@@ -555,12 +555,12 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">Recent versions</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
@@ -571,7 +571,7 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">Recent versions</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>
@@ -584,7 +584,7 @@ transitionTimingFunction: "cubic-bezier(.42,0,.58,1)",`}
                   <Text scale="subtext">IE11, Edge</Text>
                 </td>
                 <td className={css(browserSupportStyles.td)}>
-                  <Text scale="subtext" color="red45">
+                  <Text scale="subtext" color="red40">
                     Not Supported
                   </Text>
                 </td>

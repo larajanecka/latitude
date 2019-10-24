@@ -9,7 +9,7 @@ import type {DemoFile} from "../design_system/types/demoTypes";
 import Group from "../Group";
 import Banner from "../Banner";
 import Button from "../button/Button";
-import colors from "../styles/colors";
+import colors from "../colors";
 import {padding} from "../styles";
 
 const demos: DemoFile = {

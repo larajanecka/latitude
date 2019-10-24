@@ -6,7 +6,7 @@
 import * as React from "react";
 
 import {css, StyleSheet} from "aphrodite";
-import colors, {type Color} from "../../../styles/colors";
+import colors, {type Color} from "../../../colors";
 import {colorFamilies, colorMeta} from "./colorMeta";
 import Text from "../../../Text";
 import Group from "../../../Group";

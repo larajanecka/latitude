@@ -29,7 +29,7 @@ import TextLinkAction from "../../../TextLinkAction";
 import Group from "../../../Group";
 import Markdown from "../markdown/Markdown";
 
-import colors from "../../../styles/colors";
+import colors from "../../../colors";
 
 type DemoProps = {
   +demo: DemoType,

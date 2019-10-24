@@ -11,7 +11,7 @@ import invariant from "../../tools/invariant";
 import ThemeNameContext from "../../context/ThemeNameContext";
 import Icon from "../../Icon";
 import type {IconNames} from "../../tools/icons";
-import colors from "../../styles/colors";
+import colors from "../../colors";
 import stringOrFalse from "../../tools/stringOrFalse";
 
 type ButtonSize = "s" | "m" | "l";
@@ -81,7 +81,7 @@ export default function ToggleButton({
   const IconComponent = iconName && (
     <Icon
       iconName={iconName}
-      color={isInvalid ? "red45" : "grey50"}
+      color={isInvalid ? "red40" : "grey50"}
       size={getIconSize(size)}
       alignment="center"
       deprecatedAllowColorInheritance={true}
@@ -168,14 +168,14 @@ const styles = StyleSheet.create({
     },
     ":hover": {
       boxShadow: "0 2px 2px hsla(355, 70%, 50%, 0.2)",
-      borderColor: colors.red45,
+      borderColor: colors.red40,
       color: colors.red50,
     },
     ":hover span svg": {
-      fill: colors.red45,
+      fill: colors.red40,
     },
     ":active": {
-      borderColor: colors.red45,
+      borderColor: colors.red40,
       backgroundColor: colors.red10,
       color: colors.red50,
       background: " ",

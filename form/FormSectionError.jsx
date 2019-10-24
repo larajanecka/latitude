@@ -7,7 +7,7 @@
 import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 
-import colors from "../styles/colors";
+import colors from "../colors";
 
 import Icon from "../Icon";
 import Text from "../Text";
@@ -15,7 +15,7 @@ import Text from "../Text";
 const FormSectionError = ({errorMessage}: {+errorMessage: string}) => (
   <div className={css(formSectionErrorStyles.wrapper)}>
     <div className={css(formSectionErrorStyles.icon)}>
-      <Icon iconName="attention" color="red45" />
+      <Icon iconName="attention" color="red40" />
     </div>
     <div className={css(formSectionErrorStyles.message)}>
       <Text>{errorMessage}</Text>

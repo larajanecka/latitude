@@ -9,9 +9,8 @@
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
 import {uniqueId} from "lodash";
-import colors from "../styles/colors";
+import colors from "../colors";
 import {type Size} from "../sizes";
-import latitudeColors from "../colors";
 
 type Props<T> = {|
   /** whether the radio button is currently checked */
@@ -111,18 +110,18 @@ const inputFocusCheckedOuterCircle = ":focus:checked ~ div > :first-child";
 const inputHoverCheckedInnerCircle = ":hover:checked ~ div > :first-child div";
 
 const inputColors = {
-  selected: latitudeColors.grey60,
-  unselected: latitudeColors.grey30,
-  hover: latitudeColors.grey40,
-  focus: latitudeColors.grey30,
-  disabled: latitudeColors.grey20,
+  selected: colors.grey60,
+  unselected: colors.grey30,
+  hover: colors.grey40,
+  focus: colors.grey30,
+  disabled: colors.grey20,
 };
 const errorColors = {
-  selected: latitudeColors.red40,
-  unselected: latitudeColors.red30,
-  hover: latitudeColors.red40,
-  focus: latitudeColors.red20,
-  disabled: latitudeColors.grey20,
+  selected: colors.red40,
+  unselected: colors.red30,
+  hover: colors.red40,
+  focus: colors.red20,
+  disabled: colors.grey20,
 };
 
 const styles = StyleSheet.create({
@@ -207,13 +206,13 @@ const styles = StyleSheet.create({
     verticalAlign: "middle",
   },
   invalidRadio: {
-    color: colors.red45,
+    color: colors.red40,
     [hoverOuterCircle]: {
-      borderColor: colors.red45,
+      borderColor: colors.red40,
       boxShadow: "0 2px 2px hsla(355, 70%, 55%, 0.2)",
     },
     [hoverCheckedOuterCircle]: {
-      borderColor: colors.red45,
+      borderColor: colors.red40,
       boxShadow: `0 2px 2px ${errorColors.focus}`,
     },
     [activeOuterCircle]: {

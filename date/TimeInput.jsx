@@ -34,7 +34,7 @@ import DeprecatedPopper from "../popup/DeprecatedPopper";
 import TextInput from "../TextInput";
 import {zIndices} from "../tools/zIndices";
 import {border, include, margin, padding} from "../styles";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 const VALID_KEY_CODES = [ARROW_DOWN_KEY, ARROW_UP_KEY];
 

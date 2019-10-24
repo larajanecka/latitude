@@ -7,7 +7,7 @@
 import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 
-import colors from "../styles/colors";
+import colors from "../colors";
 
 import Icon from "../Icon";
 import Text from "../Text";
@@ -22,7 +22,7 @@ const FormError = ({
 }) => (
   <div className={css(formErrorStyles.wrapper)}>
     <Group gap={12} flexDirection="row">
-      <Icon iconName="attention" color="red45" />
+      <Icon iconName="attention" color="red40" />
       <Group flexDirection="column">
         <Text>{errorMessage}</Text>
         {errors ? (

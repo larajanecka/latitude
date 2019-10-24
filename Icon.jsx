@@ -10,8 +10,7 @@ import {css, StyleSheet} from "aphrodite";
 import classnames from "classnames";
 import invariant from "./tools/invariant";
 import {type IconNames, iconData} from "./tools/icons";
-import {type Color} from "./styles/colors";
-import {v3ColorMap} from "./colors";
+import colors, {type Color} from "./colors";
 import deprecatedColors, {
   type DeprecatedColor,
 } from "./styles/deprecatedColorConstants";
@@ -214,7 +213,7 @@ const getIconColor = (
     return "inherit";
   }
 
-  return v3ColorMap[color];
+  return colors[color];
 };
 
 export const styles = StyleSheet.create({

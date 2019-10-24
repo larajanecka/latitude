@@ -13,7 +13,7 @@ import PopupWithClickAway, {
   type PopperPlacement,
 } from "../popup/PopupWithClickAway";
 import FilterButton from "./FilterButton";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 type Props = {|
   ...React.ElementConfig<typeof FilterButton>,

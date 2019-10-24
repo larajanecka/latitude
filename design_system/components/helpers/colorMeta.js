@@ -5,7 +5,7 @@
  * @flow strict
  */
 
-import colors, {type Color, type ColorPalette} from "../../../styles/colors";
+import colors, {type Color, type ColorPalette} from "../../../colors";
 
 export const colorMeta: $ObjMap<
   ColorPalette,
@@ -18,14 +18,14 @@ export const colorMeta: $ObjMap<
       | "grey"
       | "blue"
       | "red"
-      | "yellow"
+      | "orange"
       | "green"
-      | "cyan"
+      | "indigo"
       | "purple",
     +additionalInformation?: string,
   |}
 > = {
-  blackDoNotUse: {
+  black: {
     contrastColor: "white",
     classification: "brand",
     colorFamily: "base",
@@ -92,31 +92,31 @@ export const colorMeta: $ObjMap<
     contrastColor: "white",
     colorFamily: "blue",
   },
-  cyan10: {
+  indigo10: {
     contrastColor: "grey60",
-    colorFamily: "cyan",
+    colorFamily: "indigo",
   },
-  cyan20: {
+  indigo20: {
     contrastColor: "grey60",
-    colorFamily: "cyan",
+    colorFamily: "indigo",
   },
-  cyan30: {
+  indigo30: {
     contrastColor: "grey60",
     classification: "product",
-    colorFamily: "cyan",
+    colorFamily: "indigo",
   },
-  cyan40: {
+  indigo40: {
     contrastColor: "grey60",
     classification: "brand",
-    colorFamily: "cyan",
+    colorFamily: "indigo",
   },
-  cyan50: {
+  indigo50: {
     contrastColor: "white",
-    colorFamily: "cyan",
+    colorFamily: "indigo",
   },
-  cyan60: {
+  indigo60: {
     contrastColor: "white",
-    colorFamily: "cyan",
+    colorFamily: "indigo",
   },
   green10: {
     contrastColor: "grey60",
@@ -161,13 +161,6 @@ export const colorMeta: $ObjMap<
     classification: "brand",
     colorFamily: "red",
   },
-  red45: {
-    contrastColor: "white",
-    classification: "product",
-    additionalInformation:
-      "red45 meets AA contrast standards and therefore is the designated product color when used in critical UI",
-    colorFamily: "red",
-  },
   red50: {
     contrastColor: "white",
     colorFamily: "red",
@@ -202,32 +195,32 @@ export const colorMeta: $ObjMap<
     contrastColor: "white",
     colorFamily: "purple",
   },
-  yellow10: {
+  orange10: {
     contrastColor: "grey60",
-    colorFamily: "yellow",
+    colorFamily: "orange",
   },
-  yellow20: {
+  orange20: {
     contrastColor: "grey60",
-    colorFamily: "yellow",
+    colorFamily: "orange",
   },
-  yellow30: {
+  orange30: {
     contrastColor: "grey60",
     classification: "product",
-    colorFamily: "yellow",
+    colorFamily: "orange",
   },
-  yellow40: {
+  orange40: {
     contrastColor: "grey60",
     classification: "brand",
-    colorFamily: "yellow",
+    colorFamily: "orange",
   },
-  yellow50: {
+  orange50: {
     contrastColor: "white",
     classification: "product",
-    colorFamily: "yellow",
+    colorFamily: "orange",
   },
-  yellow60: {
+  orange60: {
     contrastColor: "white",
-    colorFamily: "yellow",
+    colorFamily: "orange",
   },
 };
 

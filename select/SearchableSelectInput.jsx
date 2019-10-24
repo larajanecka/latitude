@@ -5,7 +5,7 @@
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
 import {Manager} from "react-popper";
-import colors from "../styles/colors";
+import colors from "../colors";
 import {type Size} from "../sizes";
 import TextInput from "../TextInput";
 import DropdownList, {type Option as DropdownOption} from "./DropdownList";

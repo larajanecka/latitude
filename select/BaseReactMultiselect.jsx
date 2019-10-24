@@ -14,7 +14,7 @@ import {inputStyles, focusedStyle} from "../styles/input";
 import {styles} from "../form/DeprecatedDropdownList";
 import {css} from "../styles";
 import borders from "../styles/borders";
-import colors from "../styles/colors";
+import colors from "../colors";
 import invariant from "../tools/invariant";
 import {zIndices} from "../tools/zIndices";
 import {LabelContext, type LabelContextType} from "../Label";

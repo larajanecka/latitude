@@ -6,7 +6,7 @@
  */
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
-import colors from "../../styles/colors";
+import colors from "../../colors";
 
 import Text from "../../Text";
 import DesignSystemLink from "../components/DesignSystemLink";

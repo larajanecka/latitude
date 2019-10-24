@@ -18,7 +18,7 @@ import {
   shouldBeCalendarDate,
 } from "./CalendarDateType";
 import DropdownButton from "../DropdownButton";
-import colors from "../styles/colors";
+import colors from "../colors";
 import IconButton from "../button/IconButton";
 
 export type CalendarDateRangeValue = {

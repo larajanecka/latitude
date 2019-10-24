@@ -6,15 +6,15 @@
 import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 
-import {v3ColorMap as colors} from "../colors";
+import colors from "../colors";
 import Group from "../Group";
 import Icon, {type IconNames} from "../Icon";
 import Text from "../Text";
 
 const statusColorMap = {
-  active: "cyan40",
+  active: "blue40",
   activeWithError: "red30",
-  completed: "cyan20",
+  completed: "blue20",
   completedWithError: "red20",
   pending: "grey20",
 };

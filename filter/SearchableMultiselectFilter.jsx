@@ -12,7 +12,7 @@ import DropdownList from "../select/DropdownList";
 import CheckboxOption from "../select/custom_option/CheckboxOption";
 import {type Size} from "../sizes";
 import Text from "../Text";
-import colors from "../styles/colors";
+import colors from "../colors";
 
 import {UP, DOWN, ESC, ENTER} from "../constants/interactions/KeyCodes";
 

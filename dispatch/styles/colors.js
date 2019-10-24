@@ -8,7 +8,7 @@ import {StyleSheet, css} from "aphrodite";
 import deprecatedColors, {
   type DeprecatedColorScheme,
 } from "../../styles/deprecatedColorConstants";
-import type {Color} from "../../styles/colors";
+import type {Color} from "../../colors";
 
 export type DeprecatedColor = $Keys<typeof deprecatedColors>;
 
@@ -21,7 +21,7 @@ const colors: DeprecatedColorScheme = {
   primary: "#12B873", // primary green, somewhat darker than success green
 };
 
-// ! from "styles/colors": colors["green40"] = "#12B873"
+// ! from "latitude/colors": colors["green40"] = "#12B873"
 export const primaryColor: Color = "green40";
 
 export default colors;

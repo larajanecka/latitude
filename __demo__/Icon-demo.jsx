@@ -34,7 +34,7 @@ const demos: DemoFile = {
       type: "code",
       title: "Custom Color",
       example: fn => {
-        const component = <Icon iconName="attention" color="red45" />;
+        const component = <Icon iconName="attention" color="red40" />;
         fn(component);
         return component;
       },

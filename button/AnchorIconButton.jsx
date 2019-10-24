@@ -8,7 +8,7 @@
 /* eslint-disable flexport/no-disabled-anchors */
 import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
-import colors from "../styles/colors";
+import colors from "../colors";
 import Icon from "../Icon";
 import type {IconNames} from "../tools/icons";
 import invariant from "../tools/invariant";
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
   none: {
     fill: colors.grey50,
     ":hover span svg": {
-      fill: colors.blackDoNotUse,
+      fill: colors.black,
     },
   },
 });

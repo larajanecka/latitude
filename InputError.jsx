@@ -7,10 +7,10 @@
 import * as React from "react";
 
 import {StyleSheet, css} from "aphrodite";
-import {v3ColorMap} from "./colors";
+import colors from "./colors";
 import {margin} from "./styles/whitespace";
 import {include} from "./styles";
-import colors from "./styles/colors";
+
 
 type Props = {|
   +errorText: string | React.Node,
@@ -49,11 +49,11 @@ export default function InputError({
 export const inputErrorStyles = StyleSheet.create({
   inputError: {
     fontSize: "13px",
-    color: colors.red45,
+    color: colors.red40,
   },
   redesign: {
     ...include(margin.t.xs),
     fontWeight: 500,
-    color: v3ColorMap.red40,
+    color: colors.red40,
   },
 });

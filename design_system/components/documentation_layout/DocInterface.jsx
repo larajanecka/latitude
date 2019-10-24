@@ -13,7 +13,7 @@ import Tooltip from "../../../Tooltip";
 import Text from "../../../Text";
 import TextLink from "../../../TextLink";
 import Group from "../../../Group";
-import colors from "../../../styles/colors";
+import colors from "../../../colors";
 import Markdown from "../markdown/Markdown";
 import IconButton from "../../../button/IconButton";
 

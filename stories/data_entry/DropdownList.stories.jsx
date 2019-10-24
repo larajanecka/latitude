@@ -8,9 +8,9 @@ import {StyleSheet, css} from "aphrodite";
 import {storiesOf} from "@storybook/react";
 import {withKnobs} from "@storybook/addon-knobs";
 import sections from "sections";
-import DeprecatedHorizontalGroup from "DeprecatedHorizontalGroup";
-import DropdownList, {type Option} from "select/DropdownList";
-import colors from "styles/colors";
+import DeprecatedHorizontalGroup from "../../DeprecatedHorizontalGroup";
+import DropdownList, {type Option} from "../../select/DropdownList";
+import colors from "../../colors";
 
 const stories = storiesOf(
   `${sections.dataEntry}/Dropdown List`,

@@ -7,7 +7,7 @@ import React, {useState} from "react";
 import Editor from "react-simple-code-editor";
 import {highlight, languages} from "prismjs";
 import {StyleSheet, css} from "aphrodite";
-import colors from "../../styles/colors";
+import colors from "../../colors";
 import IconButton from "../../button/IconButton";
 import copyToClipboard from "../../tools/CopyToClipboard";
 

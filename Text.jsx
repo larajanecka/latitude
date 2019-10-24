@@ -8,11 +8,10 @@ import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 import {typeScale, fontWeights, fontStyles} from "./styles";
 import {uiFontFamily} from "./styles/typography";
-import {type Color} from "./styles/colors";
 import invariant from "./tools/invariant";
 import {type Size} from "./sizes";
 import TextLinkContext from "./TextLinkContext";
-import {v3ColorMap} from "./colors";
+import colors, {type Color} from "./colors";
 
 const tagMap = {
   display: "h1",
@@ -26,7 +25,7 @@ export type TypeScale = $Keys<typeof tagMap>;
 
 type Props = {|
   +children: ?React.Node,
-  /** A string specifying the color for the Text. Look in styles/colors for a full list. */
+  /** A string specifying the color for the Text. Look in latitude/colors for a full list. */
   +color?: Color,
   /** The size of the text. Look in Text for tagMap. Selecting a scale will choose a corresponding semantic html tag. */
   +scale?: TypeScale,
@@ -130,7 +129,7 @@ export default function Text({
     whiteSpace: whiteSpace || textLinkContext.whiteSpace,
   };
 
-  const textColor = v3ColorMap[nestedStyles.color];
+  const textColor = colors[nestedStyles.color];
 
   return (
     <Tag
