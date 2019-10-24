@@ -36,7 +36,7 @@ exports[`DocumentUploader renders 1`] = `
     </Portal>
   </CSSTransition>
   <n
-    className="dropContainer_1iwf28k-o_O-pointer_13xlah4"
+    className="dropContainer_39qci3-o_O-pointer_13xlah4"
     disableClick={false}
     disablePreview={true}
     disabled={false}

@@ -141,7 +141,7 @@ exports[`Pill works as expected, shows close button if onDismiss is provided 1`]
         width="responsive"
       >
         <button
-          className="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-none_ifax78-o_O-m_cvqqax"
+          className="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-none_v41adi-o_O-m_cvqqax"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}

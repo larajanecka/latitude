@@ -23,7 +23,7 @@ exports[`SearchableSelectInput matches snapshot 1`] = `
 >
   <Manager>
     <div
-      className="container_e296pg-o_O-darkPlaceholderText_hirc9h"
+      className="container_e296pg-o_O-darkPlaceholderText_1sk0oij"
     >
       <DeprecatedPopperTarget>
         <Reference>
@@ -125,7 +125,7 @@ exports[`SearchableSelectInput matches snapshot 1`] = `
                           width="responsive"
                         >
                           <button
-                            className="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-none_ifax78-o_O-m_cvqqax"
+                            className="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-none_v41adi-o_O-m_cvqqax"
                             disabled={false}
                             onBlur={[Function]}
                             onClick={[Function]}
@@ -231,7 +231,7 @@ exports[`SearchableSelectInput matches snapshot 1`] = `
                       style="right: 10px;"
                     >
                       <button
-                        class="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-none_ifax78-o_O-m_cvqqax"
+                        class="base_i7qsly-o_O-m_12juzcr-o_O-blank_1tdfl6w-o_O-responsive_zk4wup-o_O-none_v41adi-o_O-m_cvqqax"
                         type="button"
                       >
                         <span
