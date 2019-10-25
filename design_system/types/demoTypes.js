@@ -7,7 +7,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import {iconData, type IconNames} from "../../tools/icons";
-import {graphicIconNames, type GraphicIcons} from "../../tools/graphicIconsConstants";
+import {
+  graphicIconNames,
+  type GraphicIcons,
+} from "../../tools/graphicIconsConstants";
 import deprecatedColors, {
   type DeprecatedColor,
 } from "../../styles/deprecatedColorConstants";
@@ -18,7 +21,7 @@ export type Option<K> = {|
   +disabled?: boolean,
 |};
 
-export type DemoType = TextDemo | CodeDemo | FullDemo;
+export type DemoType = TextDemo | CodeDemo | FullDemo | LiveDemo;
 
 type TextDemo = {|
   type: "text",
@@ -33,6 +36,11 @@ type CodeDemo = {|
   example: (renderCodeFn: (React.Node) => void) => React.Node,
   showCode?: boolean,
   fullWidth?: boolean,
+|};
+type LiveDemo = {|
+  type: "live",
+  fullWidth?: boolean,
+  example: () => React.Node,
 |};
 
 type FullDemo = {|
