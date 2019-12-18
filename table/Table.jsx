@@ -201,6 +201,7 @@ export default function Table<T>({
   onSortByChange = noop,
   rowAggregationEnabled = false,
   rowAggregationPinned = true,
+  rowAggregationRowPinned = false,
   getRowGroupId,
   expandedRows = new Set(),
   onExpandedRowsChange = noop,
@@ -249,6 +250,8 @@ export default function Table<T>({
   +rowAggregationEnabled?: boolean,
   /** Whether or not the arrows for row aggregation will be pinned to the left of the table */
   +rowAggregationPinned?: boolean,
+  /** Whether or not to display aggregate row, even when only a single entry is in group */
+  +rowAggregationRowPinned?: boolean,
   /** A function to determine which row group the row belongs to, this ID is what is returned in the row expansions set  */
   +getRowGroupId?: T => string,
   /** Which row groups are expanded, based on IDs returned from getRowGroupId */
@@ -379,7 +382,7 @@ export default function Table<T>({
     return rowGroups.reduce(
       (rows, rowGroup) => [
         ...rows,
-        rowGroup.length > 1
+        rowAggregationRowPinned || rowGroup.length > 1
           ? flattenRowGroup(rowGroup)
           : flattenRow(rowGroup[0]),
         ...(expandedRows.has(getRowGroupId(rowGroup[0]))

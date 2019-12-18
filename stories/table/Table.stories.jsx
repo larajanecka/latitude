@@ -220,6 +220,35 @@ const PinnedColumnsHoist = () => {
   return <div className={css(styles.container)}>{table}</div>;
 };
 
+const PinnedAggregateRowHoist = () => {
+  const [expandedRows, setExpandedRows] = React.useState(new Set());
+  const [selectedRows, setSelectedRows] = React.useState(new Set());
+
+  const [sortBy, setSortBy] = React.useState({
+    columnId: "id",
+    direction: "asc",
+  });
+
+  const table = (
+    <Table
+      data={data.slice(0, 100)}
+      columnDefinitions={columnDefinitions}
+      getUniqueRowId={row => row.id}
+      rowSelectionEnabled={true}
+      selectedRows={selectedRows}
+      onSelectedRowsChange={setSelectedRows}
+      rowAggregationEnabled={true}
+      rowAggregationRowPinned={true}
+      getRowGroupId={row => row.network}
+      expandedRows={expandedRows}
+      onExpandedRowsChange={setExpandedRows}
+      sortBy={sortBy}
+      onSortByChange={setSortBy}
+    />
+  );
+  return <div className={css(styles.container)}>{table}</div>;
+};
+
 const InfiniteLoadHoist = () => {
   const [sortBy, setSortBy] = React.useState({
     columnId: "id",
@@ -341,6 +370,7 @@ stories.add("Row Aggregation Table", () => <RowAggregationHoist />);
 stories.add("Row Aggregation Selection Table", () => (
   <RowAggregationSelectionHoist />
 ));
+stories.add("Row Aggregation Pinned Row", () => <PinnedAggregateRowHoist />);
 stories.add("Pinned Columns Table", () => <PinnedColumnsHoist />);
 stories.add("Infinite Load Table", () => <InfiniteLoadHoist />);
 stories.add("Rerender Table Test", () => <RerenderTableTest />);
